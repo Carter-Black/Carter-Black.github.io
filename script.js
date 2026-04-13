@@ -145,10 +145,7 @@ function setCursorArrow() {
 
 setCursorArrow();
 
-// event delegation — handles dynamically created elements (e.g. project links)
 // typewriter
-// Add your titles below — they cycle with a typing animation
-// Example: 'cs student @ csuf'
 const titles = [
   'CS @ CSUF',
   'class of 2028',
@@ -187,8 +184,6 @@ function typeWriter() {
 typeWriter();
 
 // skills
-// Add skills as objects: { name: 'Skill', desc: 'What you can do / your experience' }
-// Example: { name: 'Python', desc: 'Built ML pipelines, scraped data, automated workflows' }
 const skills = [
   { name: 'Python', desc: '' },
   { name: 'C++', desc: '' },
