@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carter Black</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="bgCanvas"></canvas>
+    <div id="cursor"></div>
+    <div id="inspectBanner" aria-live="polite"></div>
+
+    <button id="inspectToggle">&gt;_ inspect: <span id="inspectState">OFF</span></button>
+
+    <!-- Inspect editor opens when you click any element with inspect ON -->
+    <div id="inspectEditor">
+      <div id="inspectEditorHeader">
+        <span id="inspectEditorTag"></span>
+        <button id="inspectEditorClose">x</button>
+      </div>
+      <div id="inspectEditorBody"></div>
+    </div>
+
+    <nav id="navbar" data-code="nav">
+      <span class="nav-logo">> carter_black</span>
+      <ul>
+        <li><a href="#about">about</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+    </nav>
+
+    <section id="me" data-code="me">
+      <div class="me-content">
+        <p class="me-greeting">// hello, world</p>
+        <h1 class="me-name">Carter Black</h1>
+        <!-- Typewriter titles are set in script.js -> const titles = [...] -->
+        <p class="me-title"></p>
+        <a href="#projects" class="btn" data-code="btn">view my work</a>
+      </div>
+    </section>
+
+    <section id="about" data-code="about">
+      <h2 class="section-title">> about_me</h2>
+      <!--
+        FORMATTING GUIDE - about section
+        --------------------------------
+        Green highlight:  <span class="hl-green">text</span>
+        Muted/dim text:   <span class="hl-muted">text</span>
+        Normal text:      just type it inside a <p> tag
+
+        Example:
+          <p>I study <span class="hl-green">CS at CSUF</span> and care about clean code.</p>
+
+        Stats: edit the .stat blocks below (stat-num + stat-label)
+
+        Terminal JSON: edit the key/value spans inside .terminal-body
+          Key color:    <span class="hl-key">"keyName"</span>
+          String value: <span class="hl-str">"value"</span>
+          Number value: <span class="hl-num">3.8</span>
+          Bool value:   <span class="hl-bool">true</span>
+      -->
+      <div class="about-content">
+        <div class="about-text">
+          <!-- Write your about paragraphs here -->
+          <p></p>
+          <p></p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num"></span>
+              <span class="stat-label"></span>
+            </div>
+            <div class="stat">
+              <span class="stat-num"></span>
+              <span class="stat-label"></span>
+            </div>
+            <div class="stat">
+              <span class="stat-num"></span>
+              <span class="stat-label"></span>
+            </div>
+          </div>
+          <div class="about-skills">
+            <h3 class="about-subtitle">// skills</h3>
+            <div class="skills-grid" data-code="skillsgrid"></div>
+          </div>
+        </div>
+        <div class="about-terminal">
+          <div class="terminal-header">
+            <div class="terminal-titlebar">
+              <span class="terminal-app-icon" aria-hidden="true"></span>
+              <span class="terminal-title">carter.json</span>
+            </div>
+            <div class="terminal-controls" aria-hidden="true">
+              <span class="terminal-control min"></span>
+              <span class="terminal-control max"></span>
+              <span class="terminal-control close"></span>
+            </div>
+          </div>
+          <!-- Edit the JSON values below to match your info -->
+          <pre class="terminal-body">{
+  <span class="hl-key">"role"</span>: <span class="hl-str">"B.S. Student of Computer Science"</span>,
+  <span class="hl-key">"school"</span>: <span class="hl-str">"Calfornia State University Fullerton"</span>,
+  <span class="hl-key">"focus"</span>: [
+    <span class="hl-str">"AI/ML development"</span>,
+    <span class="hl-str">"Leveraging AI in programming work"</span>,
+    <span class="hl-str">"Mixing AI and other fields of Computer Science"</span>
+  ],
+  <span class="hl-key">"open_to_work && internships && collaboration"</span>: <span class="hl-bool">true</span>
+}</pre>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" data-code="projects">
+      <h2 class="section-title">> projects</h2>
+      <div id="projects-grid" data-code="projectsgrid"></div>
+    </section>
+
+    <section id="contact" data-code="contact">
+      <h2 class="section-title">> contact</h2>
+      <p class="contact-intro">I'm currently looking for <span class="contact-emphasis">full-time</span> internships over summer or winter and <span class="contact-emphasis">part-time</span> work during the school year. I'm especially interested in <span class="contact-emphasis">AI/ML</span>, <span class="contact-emphasis">data science</span>, <span class="contact-emphasis">cybersecurity</span>, and other adjacent CS disciplines where I can use AI to build, improve, and ship useful tools.</p>
+      <div class="contact-links">
+        <a href="mailto:retrac20@outlook.com">// email</a>
+        <a href="https://github.com/Carter-Black" target="_blank">// github</a>
+        <a href="https://www.linkedin.com/in/carterrblack" target="_blank">// linkedin</a>
+        <a href="assets/resume.pdf" target="_blank">// resume</a>
+      </div>
+    </section>
+
+    <footer>
+      <span>// built by carter_black | 2026</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
