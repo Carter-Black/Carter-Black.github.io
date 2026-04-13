@@ -45,18 +45,6 @@
 
 ---
 
-## running locally
-
-No build step needed — just open the file.
-
-```bash
-git clone https://github.com/Carter-Black/carter-black.github.io
-cd carter-black.github.io
-# open index.html in your browser, or use Live Server in VS Code
-```
-
----
-
 ## customization
 
 All site content is edited directly in `index.html` and `script.js`.
@@ -71,10 +59,5 @@ All site content is edited directly in `index.html` and `script.js`.
 
 ---
 
-## license
-
-MIT — feel free to use as a template and make it your own.
-
----
 
 *built by [Carter Black](https://www.linkedin.com/in/carterrblack) · 2026*
